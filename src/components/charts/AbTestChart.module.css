@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 8px;
+}
+
+.chartCard {
+  border-radius: 4px;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  padding: 10px 10px 4px;
+}
+
+.chartCard:focus,
+.chartCard:focus-visible {
+  outline: none;
+}
+
+.chartInner {
+  height: 360px;
+}

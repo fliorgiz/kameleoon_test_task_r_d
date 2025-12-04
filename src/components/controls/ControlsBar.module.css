@@ -1,0 +1,161 @@
+.bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0 4px;
+  font-size: 12px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.select {
+  position: relative;
+  min-width: 150px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  padding: 6px 26px 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--panel-bg);
+}
+
+.selectOpen {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+
+.selectValue {
+  color: var(--text);
+}
+
+.selectArrow {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease-out;
+}
+
+.selectOpen .selectArrow {
+  transform: rotate(180deg);
+}
+
+.selectOptions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--panel-bg);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.45);
+  padding: 4px;
+  z-index: 20;
+}
+
+.selectOptionsWide {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  min-width: 220px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: var(--panel-bg);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.45);
+  padding: 4px;
+  z-index: 20;
+}
+
+.selectOption {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.selectOption:hover {
+  background: var(--accent-soft);
+}
+
+.selectOptionActive {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.selectOptionRow {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.selectOptionRow:hover {
+  background: var(--accent-soft);
+}
+
+.optionDisabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.optionLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.optionDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--accent);
+}
+
+.checkboxChecked {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.exportButton {
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+}

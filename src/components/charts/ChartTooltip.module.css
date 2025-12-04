@@ -1,0 +1,86 @@
+.tooltip {
+    background: var(--panel-bg);
+    border-radius: 4px;
+    padding: 10px 12px;
+    border: 1px solid var(--border, #c7c5d0);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.35);
+    font-size: 12px;
+    min-width: 210px;
+    color: var(--text);
+}
+
+.tooltipLight {
+    color: #111827;
+}
+
+.tooltipDark {
+    color: #e5e7eb;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #5e5d67;
+}
+
+.calendarIcon {
+    margin-right: 6px;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        rgba(148, 163, 184, 0.2),
+        rgba(148, 163, 184, 0.05)
+    );
+    margin-bottom: 8px;
+}
+
+.rows {
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 2px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 4px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px dashed rgba(148, 163, 184, 0.35);
+}
+
+.tooltipDark .row {
+    border-color: rgba(148, 163, 184, 0.75);
+}
+
+.rowLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+}
